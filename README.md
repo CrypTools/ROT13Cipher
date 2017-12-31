@@ -34,8 +34,6 @@ Steps 1 and 4 can be done with these tables :
 - If an attacker knows that the message has been encrypted using ROT13 Cipher, he just needs to use the same function to decrypt the message (f(x) = 1x + 13) as 2 x 13 = 26; the number of letters existing in the alphabet.
 - We can also use **frequency analysis** to decrypt the message as each letter is encrypted with the same algorithm and the most common letters in english are : 
 
-Image centered : 
-
 <p align="center"> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/English_letter_frequency_%28alphabetic%29.svg/340px-English_letter_frequency_%28alphabetic%29.svg.png">
 </p>
