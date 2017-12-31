@@ -40,9 +40,11 @@ Steps 1 and 4 can be done with these tables :
 
 ## Example
 
+### Encrypting
+
 - Message to encrypt : **ATTACK**
-The function used is 1x + 13
-Using the above tables, ATTACK can be written as : **0 19 19 0 2 10**
+The function used is : **1x + 13**
+Using the above tables, **ATTACK** can be written as : **0 19 19 0 2 10**
 Images of each number :
 
 - f(0) = 13
@@ -63,4 +65,33 @@ The final message is **13 6 6 13 15 23** and using the tables again, we convert 
 
 > **NGGNPX**
 
-**ATTACK** is encrypted with the function **1x + 13** and becomes ***NGGNPX**.
+**ATTACK** is encrypted with the function **1x + 13** and becomes **NGGNPX**.
+
+### Decrypting
+
+- Message to decrypt : **NGGNPX**
+The function used is the same for encrypting/decrypting : 1x + 13
+Using the above tables, **NGGNPX** can be written as : **13 6 6 13 15 23**
+
+Images of each number :
+
+- f(13) = 26
+- f(6) = 19
+- f(15) = 28
+- f(23) = 36
+
+The new list is : **26 19 19 26 28 36**
+
+Using the **modulo 26 method**, we obtain:
+
+- Mod(26,26) = 0 (26 = 26 * 1 + 0)
+- Mod(19,26) = 19
+- Mod(28,26) = 2
+- Mod(36,26) = 10
+
+The final message is **0 19 19 0 2 10** and using the tables again, we convert them in the encrypted message :
+
+> **ATTACK**
+
+**NGGNPX** is decrypted with the function **1x + 13** and becomes **ATTACK**.
+
