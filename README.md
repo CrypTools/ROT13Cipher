@@ -44,8 +44,10 @@ Steps 1 and 4 can be done with these tables :
 ### Encrypting
 
 - Message to encrypt : **ATTACK**
-The function used is the same for encrypting/decrypting : **1x + 13**
-Using the above tables, **ATTACK** can be written as : **0 19 19 0 2 10**
+
+- The function used is the same for encrypting/decrypting : **1x + 13**
+- Using the above tables, **ATTACK** can be written as : **0 19 19 0 2 10**
+
 Images of each number :
 
 - f(0) = 13
@@ -71,8 +73,9 @@ The final message is **13 6 6 13 15 23** and using the tables again, we convert 
 ### Decrypting
 
 - Message to decrypt : **NGGNPX**
-The function used is the same for encrypting/decrypting : **1x + 13**
-Using the above tables, **NGGNPX** can be written as : **13 6 6 13 15 23**
+
+- The function used is the same for encrypting/decrypting : **1x + 13**
+- Using the above tables, **NGGNPX** can be written as : **13 6 6 13 15 23**
 
 Images of each number :
 
