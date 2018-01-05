@@ -2,7 +2,7 @@
 
 ## History and usage
 
-The ROT13 Cipher stands for "rotate by 13 places" and is a **substitution cipher**. ROT13 is based on a special shift of the Caesar cipher. It was developed in ancient Rome. ROT13 Cipher encrypts a message using an affine function : **1x + 13**. According to wikipedia :
+The ROT13 Cipher stands for "rotate by 13 places" and is a **substitution cipher**. ROT13 is based on a special shift of the Caesar cipher. It was developed in ancient Rome. ROT13 Cipher encrypts a message using an affine function : **f(x) = 1x + 13**. According to wikipedia :
 
 > ROT13 was in use in the net.jokes newsgroup by the early 1980s. It is used to hide potentially offensive jokes, or to obscure an answer to a puzzle or other spoiler.
 
@@ -10,7 +10,7 @@ The ROT13 Cipher stands for "rotate by 13 places" and is a **substitution cipher
 
 1. Firstly, each character of the initial text (message to encrypt) is converted in a number from 0 to 25, corresponding to its position in the Latin alphabet which contains 26 letters --> (a = 0, b = 1 ... z = 25 ).
 
-2. Then, each number obtained is transformed by an affine function (1x + 13). "x" is representing the number and 13 is the value of the shift.
+2. Then, each number obtained is transformed by an affine function (f(x) = 1x + 13). "x" is representing the number and 13 is the value of the shift.
 
 3. If we take all the images and put them in a list, we obtain n numbers corresponding to n charcaters of the initial text. The next step consists in finding the values of mudulo 26 of each number. (**Modulo means remainder**)
 
@@ -45,7 +45,7 @@ Steps 1 and 4 can be done with these tables :
 
 - Message to encrypt : **ATTACK**
 
-- The function used is the same for encrypting/decrypting : **1x + 13**
+- The function used is the same for encrypting/decrypting : **f(x) = 1x + 13**
 - Using the above tables, **ATTACK** can be written as : **0 19 19 0 2 10**
 
 Images of each number :
@@ -68,13 +68,13 @@ The final message is **13 6 6 13 15 23** and using the tables again, we convert 
 
 > **NGGNPX**
 
-**ATTACK** is encrypted with the function **1x + 13** and becomes **NGGNPX**.
+**ATTACK** is encrypted with the function **f(x) = 1x + 13** and becomes **NGGNPX**.
 
 ### Decrypting
 
 - Message to decrypt : **NGGNPX**
 
-- The function used is the same for encrypting/decrypting : **1x + 13**
+- The function used is the same for encrypting/decrypting : **f(x) = 1x + 13**
 - Using the above tables, **NGGNPX** can be written as : **13 6 6 13 15 23**
 
 Images of each number :
@@ -97,4 +97,4 @@ The final message is **0 19 19 0 2 10** and using the tables again, we convert t
 
 > **ATTACK**
 
-**NGGNPX** is decrypted with the function **1x + 13** and becomes **ATTACK**.
+**NGGNPX** is decrypted with the function **f(x) = 1x + 13** and becomes **ATTACK**.
