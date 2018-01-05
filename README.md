@@ -3,7 +3,8 @@
 ## History and usage
 
 The ROT13 Cipher stands for "rotate by 13 places" and is a **substitution cipher**. ROT13 is based on a special shift of the Caesar cipher. It was developed in ancient Rome. ROT13 Cipher encrypts a message using an affine function : 1x + 13. According to wikipedia :
-> ROT13 was in use in the net.jokes newsgroup by the early 1980s.[4] It is used to hide potentially offensive jokes, or to obscure an answer to a puzzle or other spoiler.
+
+> ROT13 was in use in the net.jokes newsgroup by the early 1980s. It is used to hide potentially offensive jokes, or to obscure an answer to a puzzle or other spoiler.
 
 ## Detailed Explanations : How it works?
 
@@ -42,9 +43,8 @@ Steps 1 and 4 can be done with these tables :
 
 ### Encrypting
 
-
 - Message to encrypt : **ATTACK**
-The function used is : **1x + 13**
+The function used is the same for encrypting/decrypting : **1x + 13**
 Using the above tables, **ATTACK** can be written as : **0 19 19 0 2 10**
 Images of each number :
 
@@ -70,9 +70,8 @@ The final message is **13 6 6 13 15 23** and using the tables again, we convert 
 
 ### Decrypting
 
-
 - Message to decrypt : **NGGNPX**
-The function used is the same for encrypting/decrypting : 1x + 13
+The function used is the same for encrypting/decrypting : **1x + 13**
 Using the above tables, **NGGNPX** can be written as : **13 6 6 13 15 23**
 
 Images of each number :
@@ -96,4 +95,3 @@ The final message is **0 19 19 0 2 10** and using the tables again, we convert t
 > **ATTACK**
 
 **NGGNPX** is decrypted with the function **1x + 13** and becomes **ATTACK**.
-
