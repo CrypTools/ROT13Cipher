@@ -2,7 +2,7 @@
 
 ## History and usage
 
-The ROT13 Cipher stands for "rotate by 13 places" and is a **substitution cipher**. ROT13 is based on a special shift of the Caesar cipher. It was developed in ancient Rome. ROT13 Cipher encrypts a message using an affine function : 1x + 13. According to wikipedia :
+The ROT13 Cipher stands for "rotate by 13 places" and is a **substitution cipher**. ROT13 is based on a special shift of the Caesar cipher. It was developed in ancient Rome. ROT13 Cipher encrypts a message using an affine function : **1x + 13**. According to wikipedia :
 
 > ROT13 was in use in the net.jokes newsgroup by the early 1980s. It is used to hide potentially offensive jokes, or to obscure an answer to a puzzle or other spoiler.
 
