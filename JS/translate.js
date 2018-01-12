@@ -10,3 +10,4 @@ String.prototype.rot13 = function() {
         return String.fromCharCode(b ? b.charCodeAt(0) + 13 : c ? c.charCodeAt(0) - 13 : 0) || a;
     });
 }
+module.exports = text => text.rot13();
