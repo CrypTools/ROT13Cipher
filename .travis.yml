@@ -30,7 +30,7 @@ matrix:
      install:
         - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)" # Install swift
      script:
-        - swift Swift/lib.swift -o out # Swift  
+        - swiftc Swift/lib.swift -o out # Swift  
         
 #dist: trusty
 #sudo: required
