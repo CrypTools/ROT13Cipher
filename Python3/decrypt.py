@@ -5,14 +5,14 @@ def decrypt(initial):
   => 'message'
   """
   initial = initial.lower()
-  list = []
+  mylist = []
   for char in initial:
-      list.append(ord(char) - 97)
+      mylist.append(ord(char) - 97)
   
   output = ""
   alphabet = dict(zip(range(0, 26), string.ascii_lowercase))
   
-  for char in list:
+  for char in mylist:
     if char in alphabet:
       image = (int(char) + 13) % 26
       output += alphabet[image]
