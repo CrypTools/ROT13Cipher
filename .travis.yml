@@ -1,20 +1,33 @@
-dist: trusty
+language: generic
 sudo: required
+dist: trusty
+notifications:
+  email: false
 env:
     - SWIFT_VERSION=4.0.3
-language:               node_js
-node_js:
-    - "node"
-    - "lts/*"
-    - "7"
-    - "8"
-before_install:
-    - npm install -g npm@latest
-    - npm install -g eye.js
-install:
-    - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)" # Install swift
-script:
-    - eye # JS
-    - swiftc Swift/lib.swift -o out # Swift
-notifications:
-  email:                false
+matrix:
+  include:
+    - language: python
+      python: 3.6
+      before_script:
+        - cd Python3/
+      script:
+        - python decrypt.py
+        - python encrypt.py
+        - python vcodecs.py
+    - language: node_js
+      node_js:
+        - "node"
+        - "lts/*"
+        - "7"
+        - "8"
+      before_install:
+        - npm install -g npm@latest
+        - npm install -g eye.js
+      script:
+        - nmp test eye
+    - language: Swift
+     install:
+        - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)" # Install swift
+     script:
+        - swift Swift/lib.swift -o out # Swift  
