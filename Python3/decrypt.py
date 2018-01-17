@@ -1,5 +1,3 @@
-import string
-
 def decrypt(initial):
   """ Use : decrypt('zrffntr')
   => 'message'
