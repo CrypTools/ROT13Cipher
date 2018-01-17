@@ -1,5 +1,3 @@
-import string
-
 def encrypt(initial):
   """ Use : encrypt("message")
   => 'zrffntr'
