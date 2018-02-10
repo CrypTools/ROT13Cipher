@@ -2,7 +2,7 @@
 
 const path = require('path').normalize(__testDir + "/../JS/")
 
-const rot13 = require(path + "translate.js")
+const rot13 = require(path + "encrypt.js") // encrypt = decrypt.
 
 
 
