@@ -1,7 +1,7 @@
-# RailFence Cipher
+# ROT13 Cipher
 <p align="center">
 <!-- replace image by project Image -->
-<img height="128" src="https://cryptools.github.io/img/rot-13.svg">
+<img height="128" src="https://cryptools.github.io/img/rot13.svg">
 </p>
 <p align="center">
 <img src="https://cryptools.github.io/img/status/implemented.svg">
