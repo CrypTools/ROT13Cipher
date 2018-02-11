@@ -19,6 +19,5 @@ script:
    - swiftc swift/lib.swift -o out # Swift
    - python3 py/decrypt.py
    - python3 py/encrypt.py
-   - python3 py/vcodecs.py
 notifications:
  email:                false
