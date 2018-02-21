@@ -102,10 +102,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Arthur Guiot** - *Initial work (Javascript, Swift)* - [@arguiot](https://github.com/arguiot)
-* **Luka Lafaye** - *Initial Work (Python)* - [@lukalafaye](https://github.com/lukalafaye)
-* **M0dEx** - *C# Implementation* - [@M0dEx](https://bitbucket.org)
-* **Lucas Gruwez** - *Python and JS refactoring* - [@lucasgruwez](https://github.com/lucasgruwez)
+Made with ❤️ at CrypTools.
 
 See also the list of [contributors](https://github.com/CrypTools/ROT13Cipher/contributors) who participated in this project.
 
