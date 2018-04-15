@@ -2,6 +2,12 @@
 -----------------------------------------------------------------------------
 
             ROT13 C++ Implementation
+            No libraries needed for compilation,
+            no argument needed for execution.
+            
+            How to use:
+            Just write your input text and press enter / return.
+            Decrypting and encrypting is the same process.
 
 -----------------------------------------------------------------------------
 */
