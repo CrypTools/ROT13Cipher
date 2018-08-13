@@ -11,7 +11,6 @@ $ ./rot13 < input.txt
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 
 // ASCII VALUES LATIN ALPHABET
 #define MINCAP 65
