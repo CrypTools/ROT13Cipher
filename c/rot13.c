@@ -1,4 +1,3 @@
-// Luka Lafaye de Micheaux
 // CrypTools - GitHub
 // Monday, 13 August 2018
 // ROT13 Cipher to encrypt text
