@@ -4,9 +4,9 @@
 
 /****
 Compile with:
-$ gcc -Wall -Werror -O -o main main.c
+$ make
 Encrypt with:
-$ ./main < input.txt
+$ ./rot13 < input.txt
 ****/
 
 #include <stdio.h>
@@ -24,7 +24,7 @@ void encode (char letter);
 
 int main (int argc, const char *argv[]) {
     int c = 0;
-    while((c = getchar()) != EOF) {
+    while ((c = getchar()) != EOF) {
        encode(c);
     }
     printf("\n");
